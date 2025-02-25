@@ -3,13 +3,14 @@ import * as Sentry from "@sentry/node"
 import { nodeProfilingIntegration } from "@sentry/profiling-node";
 
 Sentry.init({
-  dsn: "https://b72f5074b83da2ccc6ce026c5b1419f3@o4508874830839808.ingest.us.sentry.io/4508874835492864",
+  dsn: "https://f55881c324b2f6394c03d4614843faef@o4508874830839808.ingest.us.sentry.io/4508879621849088",
   integrations: [
     nodeProfilingIntegration(),
     Sentry.mongooseIntegration()
+
   ],
   // Tracing
- // tracesSampleRate: 1.0, //  Capture 100% of the transactions
+  //tracesSampleRate: 1.0, //  Capture 100% of the transactions
 });
 // Manually call startProfiler and stopProfiler
 // to profile the code in between
